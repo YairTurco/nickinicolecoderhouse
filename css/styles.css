@@ -69,10 +69,6 @@ li {
     background-size: 100% 2px;
 }
 
-.rights {
-    text-align: right;
-}
-
 .title__text {
     color: rgb(230, 227, 227);
     font-size: 2rem;
@@ -85,10 +81,6 @@ li {
 
 .menu__links {
     font-size: 1.1rem;
-}
-
-img {
-    max-width: 50%;
 }
 
 input {
@@ -106,18 +98,15 @@ textarea {
 
 .social__icon {
     width: 3rem;
+    max-width: 50%;
 }
 
 .social__links li {
     text-align: center;
 }
 
-.anim__box {
-    font-size: 1.5rem bold;
-    border-radius: 0.3rem;
-    border: 0.2rem solid rgb(230, 227, 227);
-    background-color: rgb(230, 227, 227);
-    font-family: Inter;
+.social__rights {
+    text-align: right;
 }
 
 .anim__button {
@@ -142,15 +131,7 @@ p, h1, h2, a, input {
     color: rgb(230, 227, 227);
 }
 
-p {
-    margin: 0px;
-}
-
 /* INDEX */
-
-.alineamientos {
-    text-align: center;
-}
 
 .introduction__video {
     width: 98vw;
@@ -182,9 +163,8 @@ p {
     padding: 5rem;
 }
 
-.shows {
-    text-align: center;
-    align-items: center;
+.newsletter__input {
+    margin: 0;
 }
 
 .shows__title {
@@ -196,6 +176,11 @@ p {
     font-size: 8rem;
     text-align: center;
     margin-bottom: 10rem; 
+}
+
+.shows {
+    text-align: center;
+    align-items: center;
 }
 
 .shows__location {
@@ -257,10 +242,6 @@ p {
 
 /* MUSIC */
 
-.recuerdos {
-    background: rgb(34,117,126);
-}
-
 .partedemi {
     display: flex;
     flex-direction: column;
@@ -280,6 +261,7 @@ p {
 }
 
 .recuerdos {
+    background: rgb(34,117,126);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,10 +290,6 @@ p {
 
 .gallery__item {
     border: 2px solid rgb(14, 13, 13);
-}
-
-.gallery__item img {
-    width: 100%;
 }
 
 .gallery__1 {
@@ -398,29 +376,6 @@ p {
 
 /* BIO */
 
-.bio {
-    background-image: url(../resources/nicki-nicole5.jpg);
-    background-size: cover;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 100vh;
-}
-
-.bio__container {
-    display: flex;
-    max-width: 1500px;
-    padding: 5rem 5rem;
-    justify-content: flex-end;
-}
-
-.bio__text {
-    display: flex;
-    flex-direction: column;
-    font-size: 2rem;
-    max-width: 600px;
-}
-
 /* CONTACT */
 
 .contact__grid {
@@ -431,7 +386,7 @@ p {
     padding-bottom: 10rem;
 }
 
-.contactimage__img {
+.contact__photo {
     max-width: 100%;
 }
 
@@ -450,10 +405,6 @@ p {
     align-items: center;
 }
 
-textarea {
-    resize: vertical;
-}
-
 /* MEDIA QUERIES */
 
 /* TABLETS */
@@ -461,27 +412,22 @@ textarea {
 
     /* GENERAL */
 
-    .title {
-        flex-direction: column;
+    .social__rights {
+        text-align: center;
+        padding-bottom: 1rem;
     }
 
-    .menu {
-        margin: 1rem 0rem;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-
-    .social {
-        margin: 1rem 0rem;
+    .social__links {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
     }
 
     /* INDEX */
 
     .releases__text {
         text-align: center;
-        font-size: 5rem;
+        font-size: 4.7rem;
     }
 
     .releases__tinydesk, .releases__cambiandolapiel {
@@ -490,28 +436,17 @@ textarea {
         margin: 0.5rem
     }
 
-    .newsletter__text {
-        text-align: center;
-    }
-
     .shows__title {
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
-    .shows__location {
-        font-size: 4.2rem;
-    }
-
-    .shows__location--end {
-        font-size: 4.2rem;
+    .shows__title1 {
+        font-size: 6rem;
     }
 
     /* MUSIC */
 
-    .partedemi__cover {
-        max-width: 78vw;
-        margin-bottom: 2rem;
-    }
+    
 
     /* GALLERY */
     .gallery {
@@ -578,15 +513,7 @@ textarea {
 
     /* BIO */
 
-    .bio {
-        height: 140vh;
-    }
-
     /* CONTACT */
-
-    .contactimage__img {
-        width: 98vw;
-    }
 
 }
 
@@ -595,42 +522,18 @@ textarea {
 
     /* GENERAL */
 
-    .title {
-        flex-direction: column;
-    }
-
-    .title__text {
-        font-size: 2.8rem;
-    }
-
-    .menu__links {
-        flex-direction: column;
-    }
-
-    .menu__nav {
+    .social__rights {
         text-align: center;
-        margin: 0.5rem 0rem;
+        padding-bottom: 1rem;
     }
 
-    footer {
-        flex-direction: column;
-    }
-
-    .social {
-        margin: 2rem 0rem;
-    }
-
-    .social__icon {
-        width: auto;
-    }
-
-    .rights {
-        text-align: center;
-        font-size: 1.8rem;
-        margin-top: 1rem;
+    .social__links {
+        justify-content: space-between;
+        padding: 0;
     }
 
     /* INDEX */
+
     .introduction__video {
         height: 50vh;
         padding-top: 1rem;
@@ -638,8 +541,6 @@ textarea {
 
     .releases__text {
         font-size: 3.5rem;
-        margin: 3rem 0rem;
-        text-align: center;
     }
 
     .releases__tinydesk, .releases__cambiandolapiel {
@@ -648,26 +549,18 @@ textarea {
         margin: 0.3rem
     }
 
-    .newsletter__text {
-        text-align: center;
-    }
-
     .shows__title {
-        font-size: 3.5rem;
+        font-size: 3.3rem;
     }
 
-    .shows__location {
-        font-size: 3.5rem;
-    }
-
-    .shows__location--end {
-        font-size: 3.5rem;
+    .shows__title1 {
+        font-size: 5rem;
     }
 
     /* MUSIC */
 
     .partedemi__cover {
-        max-width: 92vw;
+        max-width: 97vw;
     }
 
     .partedemi__spotify {
@@ -676,7 +569,7 @@ textarea {
     }
 
     .recuerdos__cover {
-        max-width: 94vw;
+        max-width: 98vw;
     }
 
     .recuerdos__spotify {
@@ -749,15 +642,6 @@ textarea {
 
     /* BIO */
 
-    .bio {
-        height: 220vh;
-    }
-
     /* CONTACT */
-
-    .contactimage__img {
-        width: 98vw;
-        margin: 3rem 0rem;
-    }
 
 }
