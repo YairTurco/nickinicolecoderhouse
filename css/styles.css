@@ -24,17 +24,19 @@ header {
         color: #e6e3e3;
         background-size: 100% 2px; }
 
-footer .social__media .social__links {
-  display: flex; }
-  footer .social__media .social__links .social__icon {
-    filter: invert(100%);
-    width: 3rem;
-    max-width: 50%; }
-  footer .social__media .social__links li {
-    text-align: center; }
-
-footer .social__rights {
-  text-align: right; }
+footer {
+  background-color: #810505;
+  padding-top: 1rem; }
+  footer .social__media .social__links {
+    display: flex; }
+    footer .social__media .social__links .social__icon {
+      filter: invert(100%);
+      width: 3rem;
+      max-width: 50%; }
+    footer .social__media .social__links li {
+      text-align: center; }
+  footer .social__rights {
+    text-align: right; }
 
 /* GENERALES */
 * {
@@ -44,15 +46,8 @@ footer .social__rights {
 ol {
   list-style-type: none; }
 
-li {
-  list-style-type: none; }
-
 main {
   background-color: #810505; }
-
-footer {
-  background-color: #810505;
-  padding-top: 1rem; }
 
 body {
   background-color: #2c2525;
@@ -61,10 +56,6 @@ body {
 a {
   text-decoration: none;
   color: #131212; }
-
-h1 {
-  font-size: 25px;
-  padding: 0.5rem; }
 
 li {
   list-style-type: none; }
