@@ -1,0 +1,38 @@
+
+header {
+    background-color: rgb(129, 5, 5);
+
+    .title__text {
+        color: rgb(230, 227, 227);
+        font-size: 2rem;
+        margin-right: 2rem;
+        &:hover {
+            color: rgb(230, 227, 227);
+        }
+    }
+
+    .menu__links {
+        font-size: 1.1rem;
+
+        .menu__nav {
+            margin:0 0.75rem;
+            text-decoration: none;
+            color: rgb(230, 227, 227);
+            background-image: linear-gradient(rgb(230, 227, 227), rgb(230, 227, 227));
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            &:hover {
+                color: rgb(230, 227, 227);
+                background-size: 100% 2px;
+            }
+
+            a:focus {
+                color: rgb(230, 227, 227);
+                background-size: 100% 2px;
+            }
+        }
+    }
+    
+}

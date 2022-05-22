@@ -1,0 +1,25 @@
+
+footer {
+
+    .social__media {
+
+        .social__links {
+            display: flex;
+
+            .social__icon {
+                filter: invert(100%);
+                width: 3rem;
+                max-width: 50%;
+            }
+
+            li {
+                text-align: center;
+            }
+
+        }
+
+    }
+    .social__rights {
+        text-align: right;
+    }
+}
