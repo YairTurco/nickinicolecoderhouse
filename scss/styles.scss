@@ -10,643 +10,644 @@
     padding: 0px;
 }
 
-ol {
-    list-style-type: none;
-}
-
-main {
-    background-color: $background;
-}
 
 body {
     background-color: rgb(44, 37, 37);
     font-family: Inter;
-}
 
-a {
-    text-decoration: none;
-    color: rgb(19, 18, 18);
-}
-
-li {
-    list-style-type: none;
-}
-
-input {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 0rem 2rem;
-    margin: 0.5rem;
-}
-
-textarea {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 0.5rem;
-}
-
-.anim__button {
-    font-size: 1.5rem;
-    border-radius: 0.3rem;
-    border: 0.2rem solid;
-    background-color: rgba(0, 0, 0, 0);
-    transition: background-color .2s;
-}
-
-.anim__button:hover {
-    background-color: $transformaciones;
-    border-color: $transformaciones;
-    color: rgb(31, 29, 29);
-}
-
-::placeholder {
-    color: rgb(14, 13, 13);
-}
-
-p, h1, h2, a, input {
-    color: $textos;
-}
-
-/* INDEX */
-
-.introduction {
-    text-align: center;
-    align-items: center;
-
-    &__video {
-        width: 98vw;
-        height: 98vh;
+    ol {
+        list-style-type: none;
     }
-}
-
-.releases {
-
-    &__text {
+    
+    main {
+        background-color: $background;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(19, 18, 18);
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    input {
+        font-size: 1.5rem;
         text-align: center;
-        font-size: 6rem;
-        margin: 5rem 0rem;
+        padding: 0rem 2rem;
+        margin: 0.5rem;
     }
-
-    &__videos {
+    
+    textarea {
+        font-size: 1.5rem;
         text-align: center;
-        align-items: center;
+        margin: 0.5rem;
     }
-
-    &__tinydesk {
-        width: 80vh;
-        height: 50vh;
-    }
-
-    &__cambiandolapiel {
-        width: 80vh;
-        height: 50vh;
-    }
-}
-
-
-.newsletter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5rem;
-
-    &__input {
-        margin: 0;
-    }
-}
-
-.shows__title {
-    font-size: 8rem;
-    text-align: center;
-}
-
-.shows__title1 {
-    font-size: 8rem;
-    text-align: center;
-    margin-bottom: 10rem; 
-}
-
-.shows {
-    text-align: center;
-    align-items: center;
-    &__location {
-        font-size: 3.5rem;
-    }
-
-    &__location--end {
-        font-size: 3.5rem;
-        text-decoration: line-through;
-        text-decoration-color: $fechacerrada;
-    }
-
-    &__country {
+    
+    .anim__button {
         font-size: 1.5rem;
-    }
-
-    &__country--end {
-        font-size: 1.5rem;
-        text-decoration: line-through;
-        text-decoration-color: $fechacerrada;
-    }
-
-    &__date {
-        font-size: 2rem;
-    }
-
-    &__date--end {
-        font-size: 2rem;
-        text-decoration: line-through;
-        text-decoration-color: $fechacerrada;
-    }
-
-    &__buy {
-        font-size: 1.5rem;
-        margin-bottom: 5rem;
-        border-radius: 1rem;
-        padding: 0.7rem;
+        border-radius: 0.3rem;
         border: 0.2rem solid;
-        background-color: rgba(134, 28, 30, 0);
-        transition: background-color .3s;
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color .2s;
         &:hover {
             background-color: $transformaciones;
             border-color: $transformaciones;
-            color: rgb(14, 13, 13);
-        }
-
-    }
-
-    &__buy--end {
-        font-size: 1.5rem;
-        margin-bottom: 5rem;
-        text-decoration: line-through;
-        text-decoration-color: $fechacerrada;
-        border-radius: 1rem;
-        padding: 0.7rem;
-        border: 0.2rem solid;
-        background-color: rgba(134, 28, 30, 0);
-    }
-}
-/* MUSIC */
-
-.partedemi {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: space-between ;
-    padding: 4rem;
-    &__spotify {
-        width: 85vw;
-        height: 31.25rem;
-    }
-
-    &__cover {
-        max-width: 100vw;
-        margin-bottom: 2rem;
-    }
-}
-
-
-.recuerdos {
-    background: $recuerdos;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4rem;
-    &__spotify {
-        width: 85vw;
-        height: 31.25rem;
-    }
-
-    &__cover {
-        max-width: 100vw;
-        margin-bottom: 2rem;
-    }
-}
-
-/* GALLERY */
-
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 28rem 28rem 28rem 28rem 28rem;
-    gap: 0.5rem;
-    margin: 0rem 0.5rem;
-    &__item {
-        border: 2px solid rgb(14, 13, 13);
-    }
-    
-    &__1 {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        background-image: url(../resources/nicolegallery/nickig1.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    &__2 {
-        grid-column-start: 2;
-        grid-column-end: 4;
-        background-image: url(../resources/nicolegallery/nickig2.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    &__3 {
-        grid-row-start: 2;
-        grid-row-end: 4;
-        background-image: url(../resources/nicolegallery/nickig3.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    &__4 {
-        background-image: url(../resources/nicolegallery/nickig4.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    &__5 {
-        background-image: url(../resources/nicolegallery/nickig5.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    &__6 {
-        grid-row-start: 3;
-        grid-row-end: 5;
-        background-image: url(../resources/nicolegallery/nickig6.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    &__7 {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        background-image: url(../resources/nicolegallery/nickig7.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    &__8 {
-        background-image: url(../resources/nicolegallery/nickig8.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    &__9 {
-        background-image: url(../resources/nicolegallery/nickig9.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    &__10 {
-        background-image: url(../resources/nicolegallery/nickig10.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-}
-
-/* BIO */
-
-.bio {
-    display: flex;
-    &__photo {
-        display: flex;
-        align-items: center;
-        
-    }
-
-    &__img {
-        margin: 1rem;
-        width: 50vw;
-    }
-
-    &__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 1rem;
-        font-size: 1.7rem;
-    }
-}
-
-/* CONTACT */
-
-.contact {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    padding-bottom: 10rem;
-    &__photo {
-        max-width: 100%;
-    }
-
-    &__box {
-
-        form {
-            .contact__form {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-
-    }
-
-    &__text {
-        margin: 2rem 2rem;
-        p {
-            font-size: 2.5rem;
-            text-align: center;
+            color: rgb(31, 29, 29);
         }
     }
-}
-
-/* MEDIA QUERIES */
-
-/* TABLETS */
-
-@media (min-width: 541px) and (max-width: 1000px) {
-
-    /* GENERAL */
-
-    .social__rights p {
-        text-align: center;
-        padding-bottom: 1rem;
+    
+    
+    ::placeholder {
+        color: rgb(14, 13, 13);
     }
-
-    .social__links {
-        display: flex;
-        justify-content: space-around;
-        padding: 0;
+    
+    p, h1, h2, a, input {
+        color: $textos;
     }
-
+    
     /* INDEX */
-
+    
+    .introduction {
+        text-align: center;
+        align-items: center;
+    
+        &__video {
+            width: 98vw;
+            height: 98vh;
+        }
+    }
+    
     .releases {
+    
         &__text {
             text-align: center;
-            font-size: 4.7rem;
+            font-size: 6rem;
+            margin: 5rem 0rem;
         }
-
+    
+        &__videos {
+            text-align: center;
+            align-items: center;
+        }
+    
         &__tinydesk {
+            width: 80vh;
             height: 50vh;
-            width: 97vw;
         }
-
+    
         &__cambiandolapiel {
+            width: 80vh;
             height: 50vh;
-            width: 97vw;
         }
     }
-
-    .shows__title {
-        font-size: 6rem;
-    }
-
-    .shows__title1 {
-        font-size: 6rem;
-    }
-
-    /* GALLERY */
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 28rem 28rem 28rem 28rem 28rem 28rem 28rem;
-        gap: 0.5rem;
-        margin: 0rem 0.5rem;
-        &__1 {
-            grid-row-start: 1;
-            grid-row-end: 3;
-        }
-        
-        &__2 {
-            grid-row-start: 3;
-            grid-row-end: 4;
-            grid-column-start: 1;
-            grid-column-end: 3;
-        }
-        
-        &__3 {
-            grid-row-start: 4;
-            grid-row-end: 6;
-            grid-column-start: 2;
-            grid-column-end: 3;
-        }
-        
-        &__4 {
-            grid-row-start: 1;
-            grid-row-end: 2;
-        }
-        
-        &__5 {
-            grid-row-start: 2;
-            grid-row-end: 3;
-        }
-        
-        &__6 {
-            grid-row-start: 7;
-            grid-row-end: 8;
-        }
-        
-        &__7 {
-            grid-row-start: 6;
-            grid-row-end: 7;
-        }
-        
-        &__8 {
-            grid-row-start: 4;
-            grid-row-end: 5;
-        }
-        
-        &__9 {
-            grid-row-start: 5;
-            grid-row-end: 6;
-        }
-        
-        &__10 {
-            grid-row-start: 7;
-            grid-row-end: 8;
-        }
-
-    }
-
-    /* BIO */
-
-    .bio {
+    
+    
+    .newsletter {
+        display: flex;
         flex-direction: column;
         align-items: center;
-
-        &__img {
-            min-width: 480px;
+        padding: 5rem;
+    
+        &__input {
+            margin: 0;
         }
     }
-
-    /* CONTACT */
-
-}
-
-/* MOBILE */
-@media (min-width: 320px) and (max-width: 540px) {
-
-    /* GENERAL */
-
-    .social__rights p {
+    
+    .shows__title {
+        font-size: 8rem;
         text-align: center;
-        padding-bottom: 1rem;
     }
-
-    .social__links {
-        justify-content: space-between;
-        padding: 0;
+    
+    .shows__title1 {
+        font-size: 8rem;
+        text-align: center;
+        margin-bottom: 10rem; 
     }
-
-    /* INDEX */
-
-    .introduction__video {
-        height: 50vh;
-        padding-top: 1rem;
-    }
-
-    .releases {
-        &__text {
+    
+    .shows {
+        text-align: center;
+        align-items: center;
+        &__location {
             font-size: 3.5rem;
         }
-
-        &__tinydesk {
-            height: 50vh;
-            width: 97vw;
-            margin: 0.3rem
-        }
-
-        &__cambiandolapiel {
-            height: 50vh;
-            width: 97vw;
-            margin: 0.3rem
-        }
-    }
     
-    .shows__title {
-        font-size: 3.3rem;
+        &__location--end {
+            font-size: 3.5rem;
+            text-decoration: line-through;
+            text-decoration-color: $fechacerrada;
+        }
+    
+        &__country {
+            font-size: 1.5rem;
+        }
+    
+        &__country--end {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            text-decoration-color: $fechacerrada;
+        }
+    
+        &__date {
+            font-size: 2rem;
+        }
+    
+        &__date--end {
+            font-size: 2rem;
+            text-decoration: line-through;
+            text-decoration-color: $fechacerrada;
+        }
+    
+        &__buy {
+            font-size: 1.5rem;
+            margin-bottom: 5rem;
+            border-radius: 1rem;
+            padding: 0.7rem;
+            border: 0.2rem solid;
+            background-color: rgba(134, 28, 30, 0);
+            transition: background-color .3s;
+            &:hover {
+                background-color: $transformaciones;
+                border-color: $transformaciones;
+                color: rgb(14, 13, 13);
+            }
+    
+        }
+    
+        &__buy--end {
+            font-size: 1.5rem;
+            margin-bottom: 5rem;
+            text-decoration: line-through;
+            text-decoration-color: $fechacerrada;
+            border-radius: 1rem;
+            padding: 0.7rem;
+            border: 0.2rem solid;
+            background-color: rgba(134, 28, 30, 0);
+        }
     }
-
-    .shows__title1 {
-        font-size: 5rem;
-    }
-
     /* MUSIC */
-
+    
     .partedemi {
-        &__cover {
-            max-width: 97vw;
-        }
-    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between ;
+        padding: 4rem;
         &__spotify {
-            width: 98vw;
+            width: 85vw;
             height: 31.25rem;
         }
+    
+        &__cover {
+            max-width: 100vw;
+            margin-bottom: 2rem;
+        }
     }
-
+    
+    
     .recuerdos {
-        &__cover {
-            max-width: 98vw;
-        }
-    
+        background: $recuerdos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem;
         &__spotify {
-            width: 98vw;
+            width: 85vw;
             height: 31.25rem;
         }
+    
+        &__cover {
+            max-width: 100vw;
+            margin-bottom: 2rem;
+        }
     }
-
+    
     /* GALLERY */
-
+    
     .gallery {
         display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 28rem 28rem 28rem 28rem 28rem;
         gap: 0.5rem;
         margin: 0rem 0.5rem;
+        &__item {
+            border: 2px solid rgb(14, 13, 13);
+        }
+        
         &__1 {
             grid-row-start: 1;
             grid-row-end: 3;
+            background-image: url(../resources/nicolegallery/nickig1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         
         &__2 {
-            grid-row-start: 3;
-            grid-row-end: 4;
-            grid-column-start: 1;
-            grid-column-end: 1;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-image: url(../resources/nicolegallery/nickig2.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         
         &__3 {
-            grid-row-start: 4;
-            grid-row-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            background-image: url(../resources/nicolegallery/nickig3.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         
         &__4 {
-            grid-row-start: 6;
-            grid-row-end: 7;
+            background-image: url(../resources/nicolegallery/nickig4.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         
         &__5 {
-            grid-row-start: 7;
-            grid-row-end: 8;
+            background-image: url(../resources/nicolegallery/nickig5.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         
         &__6 {
-            grid-row-start: 8;
-            grid-row-end: 10;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            background-image: url(../resources/nicolegallery/nickig6.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         
         &__7 {
-            grid-row-start: 10;
-            grid-row-end: 11;
-            grid-column-end: 1;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            background-image: url(../resources/nicolegallery/nickig7.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         
         &__8 {
-            grid-row-start: 11;
-            grid-row-end: 12;
+            background-image: url(../resources/nicolegallery/nickig8.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         
         &__9 {
-            grid-row-start: 12;
-            grid-row-end: 14;
+            background-image: url(../resources/nicolegallery/nickig9.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         
         &__10 {
-            grid-row-start: 14;
-            grid-row-end: 15;
+            background-image: url(../resources/nicolegallery/nickig10.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
+    
     }
-
+    
     /* BIO */
-
+    
     .bio {
-        flex-direction: column;
-        align-items: center;
-
-        &__img {
-            min-width: 320px;
+        display: flex;
+        &__photo {
+            display: flex;
+            align-items: center;
+            
         }
-
+    
+        &__img {
+            margin: 1rem;
+            width: 50vw;
+        }
+    
         &__text {
-            font-size: 1.3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 1rem;
+            font-size: 1.7rem;
         }
     }
-
+    
+    /* CONTACT */
+    
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        padding-bottom: 10rem;
+        &__photo {
+            max-width: 100%;
+        }
+    
+        &__box {
+    
+            form {
+                .contact__form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+    
+        }
+    
+        &__text {
+            margin: 2rem 2rem;
+            p {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+        }
+    }
+    
+    /* MEDIA QUERIES */
+    
+    /* TABLETS */
+    
+    @media (min-width: 541px) and (max-width: 1000px) {
+    
+        /* GENERAL */
+    
+        .social__rights p {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+    
+        .social__links {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+        }
+    
+        /* INDEX */
+    
+        .releases {
+            &__text {
+                text-align: center;
+                font-size: 4.7rem;
+            }
+    
+            &__tinydesk {
+                height: 50vh;
+                width: 97vw;
+            }
+    
+            &__cambiandolapiel {
+                height: 50vh;
+                width: 97vw;
+            }
+        }
+    
+        .shows__title {
+            font-size: 6rem;
+        }
+    
+        .shows__title1 {
+            font-size: 6rem;
+        }
+    
+        /* GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 28rem 28rem 28rem 28rem 28rem 28rem 28rem;
+            gap: 0.5rem;
+            margin: 0rem 0.5rem;
+            &__1 {
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            
+            &__2 {
+                grid-row-start: 3;
+                grid-row-end: 4;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            
+            &__3 {
+                grid-row-start: 4;
+                grid-row-end: 6;
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+            
+            &__4 {
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+            
+            &__5 {
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            
+            &__6 {
+                grid-row-start: 7;
+                grid-row-end: 8;
+            }
+            
+            &__7 {
+                grid-row-start: 6;
+                grid-row-end: 7;
+            }
+            
+            &__8 {
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+            
+            &__9 {
+                grid-row-start: 5;
+                grid-row-end: 6;
+            }
+            
+            &__10 {
+                grid-row-start: 7;
+                grid-row-end: 8;
+            }
+    
+        }
+    
+        /* BIO */
+    
+        .bio {
+            flex-direction: column;
+            align-items: center;
+    
+            &__img {
+                min-width: 480px;
+            }
+        }
+    
+        /* CONTACT */
+    
+    }
+    
+    /* MOBILE */
+    @media (min-width: 320px) and (max-width: 540px) {
+    
+        /* GENERAL */
+    
+        .social__rights p {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+    
+        .social__links {
+            justify-content: space-between;
+            padding: 0;
+        }
+    
+        /* INDEX */
+    
+        .introduction__video {
+            height: 50vh;
+            padding-top: 1rem;
+        }
+    
+        .releases {
+            &__text {
+                font-size: 3.5rem;
+            }
+    
+            &__tinydesk {
+                height: 50vh;
+                width: 97vw;
+                margin: 0.3rem
+            }
+    
+            &__cambiandolapiel {
+                height: 50vh;
+                width: 97vw;
+                margin: 0.3rem
+            }
+        }
+        
+        .shows__title {
+            font-size: 3.3rem;
+        }
+    
+        .shows__title1 {
+            font-size: 5rem;
+        }
+    
+        /* MUSIC */
+    
+        .partedemi {
+            &__cover {
+                max-width: 97vw;
+            }
+        
+            &__spotify {
+                width: 98vw;
+                height: 31.25rem;
+            }
+        }
+    
+        .recuerdos {
+            &__cover {
+                max-width: 98vw;
+            }
+        
+            &__spotify {
+                width: 98vw;
+                height: 31.25rem;
+            }
+        }
+    
+        /* GALLERY */
+    
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem 28rem;
+            gap: 0.5rem;
+            margin: 0rem 0.5rem;
+            &__1 {
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            
+            &__2 {
+                grid-row-start: 3;
+                grid-row-end: 4;
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+            
+            &__3 {
+                grid-row-start: 4;
+                grid-row-end: 6;
+            }
+            
+            &__4 {
+                grid-row-start: 6;
+                grid-row-end: 7;
+            }
+            
+            &__5 {
+                grid-row-start: 7;
+                grid-row-end: 8;
+            }
+            
+            &__6 {
+                grid-row-start: 8;
+                grid-row-end: 10;
+            }
+            
+            &__7 {
+                grid-row-start: 10;
+                grid-row-end: 11;
+                grid-column-end: 1;
+            }
+            
+            &__8 {
+                grid-row-start: 11;
+                grid-row-end: 12;
+            }
+            
+            &__9 {
+                grid-row-start: 12;
+                grid-row-end: 14;
+            }
+            
+            &__10 {
+                grid-row-start: 14;
+                grid-row-end: 15;
+            }
+        }
+    
+        /* BIO */
+    
+        .bio {
+            flex-direction: column;
+            align-items: center;
+    
+            &__img {
+                min-width: 320px;
+            }
+    
+            &__text {
+                font-size: 1.3rem;
+            }
+        }
+    
+    }
 }
