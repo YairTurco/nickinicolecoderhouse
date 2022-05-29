@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
+@import 'functions';
 
 /* GENERALES */
 
@@ -12,8 +13,7 @@
 
 
 body {
-    background-color: rgb(44, 37, 37);
-    font-family: Inter;
+    @include bodybase;
 
     ol {
         list-style-type: none;
@@ -93,13 +93,11 @@ body {
         }
     
         &__tinydesk {
-            width: 80vh;
-            height: 50vh;
+            @include releasesizes;
         }
     
         &__cambiandolapiel {
-            width: 80vh;
-            height: 50vh;
+            @include releasesizes;
         }
     }
     
@@ -116,13 +114,11 @@ body {
     }
     
     .shows__title {
-        font-size: 8rem;
-        text-align: center;
+        @include title (8rem, center);
     }
     
     .shows__title1 {
-        font-size: 8rem;
-        text-align: center;
+        @include title (8rem, center);
         margin-bottom: 10rem; 
     }
     
@@ -195,8 +191,7 @@ body {
         align-content: space-between ;
         padding: 4rem;
         &__spotify {
-            width: 85vw;
-            height: 31.25rem;
+            @include spotifylists;
         }
     
         &__cover {
@@ -213,8 +208,7 @@ body {
         align-items: center;
         padding: 4rem;
         &__spotify {
-            width: 85vw;
-            height: 31.25rem;
+            @include spotifylists;
         }
     
         &__cover {

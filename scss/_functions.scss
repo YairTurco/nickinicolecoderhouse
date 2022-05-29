@@ -1,0 +1,19 @@
+@mixin bodybase {
+    background-color: rgb(44, 37, 37);
+    font-family: Inter;
+}
+
+@mixin releasesizes {
+    width: 80vh;
+    height: 50vh;
+}
+
+@mixin title ($size, $align) {
+    font-size: $size;
+    text-align: $align;
+}
+
+@mixin spotifylists {
+    width: 85vw;
+    height: 31.25rem;
+}
