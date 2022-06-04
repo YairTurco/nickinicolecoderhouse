@@ -74,8 +74,11 @@ body {
         align-items: center;
     
         &__video {
-            width: 98vw;
-            height: 98vh;
+            width: 100vw;
+            height: 50vw;
+            object-fit: cover;
+            padding: 0;
+            margin: 0;
         }
     }
     
@@ -325,7 +328,8 @@ body {
     
         &__img {
             margin: 1rem;
-            width: 50vw;
+            width: 48vw;
+            border-radius: 1rem;
         }
     
         &__text {
@@ -512,7 +516,7 @@ body {
         /* INDEX */
     
         .introduction__video {
-            height: 50vh;
+            height: 62vh;
             padding-top: 1rem;
         }
     
