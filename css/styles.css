@@ -95,19 +95,22 @@ body {
       object-fit: cover;
       padding: 0;
       margin: 0; }
-  body .releases__text {
-    text-align: center;
-    font-size: 6rem;
-    margin: 5rem 0rem; }
-  body .releases__videos {
-    text-align: center;
-    align-items: center; }
-  body .releases__tinydesk {
-    width: 80vh;
-    height: 50vh; }
-  body .releases__cambiandolapiel {
-    width: 80vh;
-    height: 50vh; }
+  body .releases {
+    background-color: black;
+    padding-bottom: 2rem; }
+    body .releases__text {
+      text-align: center;
+      font-size: 6rem;
+      margin: 5rem 0rem; }
+    body .releases__videos {
+      text-align: center;
+      align-items: center; }
+    body .releases__tinydesk {
+      width: 80vh;
+      height: 50vh; }
+    body .releases__cambiandolapiel {
+      width: 80vh;
+      height: 50vh; }
   body .newsletter {
     display: flex;
     flex-direction: column;
@@ -117,11 +120,9 @@ body {
       margin: 0; }
   body .shows__title {
     font-size: 8rem;
-    text-align: center; }
-  body .shows__title1 {
-    font-size: 8rem;
     text-align: center;
-    margin-bottom: 10rem; }
+    margin-bottom: 10rem;
+    margin-top: 10rem; }
   body .shows {
     text-align: center;
     align-items: center; }
