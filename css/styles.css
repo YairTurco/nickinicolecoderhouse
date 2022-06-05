@@ -1,5 +1,5 @@
 header {
-  background-color: #810505; }
+  background-color: #ac0808; }
   header .title__text {
     color: #e6e3e3;
     font-size: 2rem;
@@ -25,7 +25,7 @@ header {
         background-size: 100% 2px; }
 
 footer {
-  background-color: #810505;
+  background-color: #8f0707;
   padding-top: 1rem; }
   footer .social__media .social__links {
     display: flex; }
@@ -57,7 +57,7 @@ body {
   body ol {
     list-style-type: none; }
   body main {
-    background-color: #810505; }
+    background-color: #ac0808; }
   body a {
     text-decoration: none;
     color: #131212; }
@@ -96,7 +96,7 @@ body {
       padding: 0;
       margin: 0; }
   body .releases {
-    background-color: black;
+    background-color: #ac0808;
     padding-bottom: 2rem; }
     body .releases__text {
       text-align: center;
@@ -122,7 +122,8 @@ body {
     font-size: 8rem;
     text-align: center;
     margin-bottom: 10rem;
-    margin-top: 10rem; }
+    margin-top: 10rem;
+    font-weight: 700; }
   body .shows {
     text-align: center;
     align-items: center; }
@@ -176,7 +177,8 @@ body {
       height: 31.25rem; }
     body .partedemi__cover {
       max-width: 100vw;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      box-shadow: 0rem 0rem 1rem 1rem #8f0707; }
   body .recuerdos {
     background: #22757e;
     display: flex;
@@ -188,13 +190,15 @@ body {
       height: 31.25rem; }
     body .recuerdos__cover {
       max-width: 100vw;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      box-shadow: 0rem 0rem 1rem 1rem #19575e; }
   body .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 28rem 28rem 28rem 28rem 28rem;
     gap: 0.5rem;
-    margin: 0rem 0.5rem; }
+    margin: 0rem 0.5rem;
+    padding-bottom: 1rem; }
     body .gallery__item {
       border: 2px solid #0e0d0d; }
     body .gallery__1 {
@@ -272,8 +276,9 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin: 1rem;
-      font-size: 1.7rem; }
+      margin: 5rem;
+      font-size: 1.5rem;
+      font-weight: 200; }
   body .contact {
     display: grid;
     grid-template-columns: 1fr;
