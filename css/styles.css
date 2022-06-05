@@ -102,15 +102,6 @@ body {
     color: #0e0d0d; }
   body p, body h1, body h2, body a, body input {
     color: #e6e3e3; }
-  body .introduction {
-    text-align: center;
-    align-items: center; }
-    body .introduction__video {
-      width: 100vw;
-      height: 50vw;
-      object-fit: cover;
-      padding: 0;
-      margin: 0; }
   body .releases {
     padding-bottom: 2rem; }
     body .releases__text {

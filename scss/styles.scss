@@ -68,19 +68,6 @@ body {
     
     /* INDEX */
     
-    .introduction {
-        text-align: center;
-        align-items: center;
-    
-        &__video {
-            width: 100vw;
-            height: 50vw;
-            object-fit: cover;
-            padding: 0;
-            margin: 0;
-        }
-    }
-    
     .releases {
     padding-bottom: 2rem;
         &__text {
