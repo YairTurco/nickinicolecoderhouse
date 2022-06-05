@@ -96,7 +96,6 @@ body {
       padding: 0;
       margin: 0; }
   body .releases {
-    background-color: #ac0808;
     padding-bottom: 2rem; }
     body .releases__text {
       text-align: center;
