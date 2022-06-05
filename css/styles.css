@@ -1,5 +1,5 @@
 header {
-  background-color: #ac0808; }
+  background-color: #ac0a0a; }
   header .title__text {
     color: #e6e3e3;
     font-size: 2rem;
@@ -23,10 +23,19 @@ header {
       header .menu__links .menu__nav a:focus {
         color: #e6e3e3;
         background-size: 100% 2px; }
+  header .navbar-toggler {
+    border-color: #e6e3e3; }
+  header .navbar-toggler-icon {
+    filter: invert(100%); }
+  @media (min-width: 320px) and (max-width: 540px) {
+    header h1 {
+      margin: 0rem; } }
 
 footer {
   background-color: #8f0707;
-  padding-top: 1rem; }
+  padding-top: 2rem;
+  /* TABLET */
+  /* MOBILE */ }
   footer .social__media .social__links {
     display: flex; }
     footer .social__media .social__links .social__icon {
@@ -37,6 +46,14 @@ footer {
       text-align: center; }
   footer .social__rights {
     text-align: right; }
+  @media (min-width: 541px) and (max-width: 1000px) {
+    footer footer {
+      padding-top: 2rem; }
+      footer footer .social__media .social__links {
+        justify-content: space-evenly; } }
+  @media (min-width: 320px) and (max-width: 540px) {
+    footer footer {
+      padding-top: 2rem; } }
 
 /* GENERALES */
 * {
@@ -52,15 +69,14 @@ body {
   /* BIO */
   /* CONTACT */
   /* MEDIA QUERIES */
-  /* TABLETS */
+  /* TABLET */
   /* MOBILE */ }
   body ol {
     list-style-type: none; }
   body main {
-    background-color: #ac0808; }
+    background-color: #ac0a0a; }
   body a {
-    text-decoration: none;
-    color: #131212; }
+    text-decoration: none; }
   body li {
     list-style-type: none; }
   body input {
@@ -314,14 +330,14 @@ body {
         font-size: 4.7rem; }
       body .releases__tinydesk {
         height: 50vh;
-        width: 97vw; }
+        width: 97vw;
+        margin-bottom: 2rem; }
       body .releases__cambiandolapiel {
         height: 50vh;
         width: 97vw; }
       body .shows__title {
-        font-size: 6rem; }
-      body .shows__title1 {
-        font-size: 6rem; }
+        font-size: 6rem;
+        margin-top: 5rem; }
       body .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -366,14 +382,18 @@ body {
         flex-direction: column;
         align-items: center; }
         body .bio__img {
-          min-width: 480px; } }
+          min-width: 480px;
+          margin: 2rem 0rem; }
+        body .bio__text {
+          margin: 1rem 3rem; } }
   @media (min-width: 320px) and (max-width: 540px) {
     body {
       /* GENERAL */
       /* INDEX */
       /* MUSIC */
       /* GALLERY */
-      /* BIO */ }
+      /* BIO */
+      /* CONTACT */ }
       body .social__rights p {
         text-align: center;
         padding-bottom: 1rem; }
@@ -394,16 +414,21 @@ body {
         width: 97vw;
         margin: 0.3rem; }
       body .shows__title {
-        font-size: 3.3rem; }
-      body .shows__title1 {
-        font-size: 5rem; }
+        font-size: 3.3rem;
+        margin: 3rem; }
+      body .shows__location {
+        font-size: 3rem; }
+      body .shows__location--end {
+        font-size: 3rem; }
       body .partedemi__cover {
-        max-width: 97vw; }
+        max-width: 97vw;
+        margin: 0rem 1.5rem 3rem 1.5rem; }
       body .partedemi__spotify {
         width: 98vw;
         height: 31.25rem; }
       body .recuerdos__cover {
-        max-width: 98vw; }
+        max-width: 98vw;
+        margin: 0rem 1.5rem 3rem 1.5rem; }
       body .recuerdos__spotify {
         width: 98vw;
         height: 31.25rem; }
@@ -450,6 +475,10 @@ body {
         flex-direction: column;
         align-items: center; }
         body .bio__img {
-          min-width: 320px; }
+          min-width: 370px;
+          margin: 2rem 0rem; }
         body .bio__text {
-          font-size: 1.3rem; } }
+          font-size: 1.3rem;
+          margin: 0rem 3rem; }
+      body .contact {
+        padding-bottom: 5rem; } }

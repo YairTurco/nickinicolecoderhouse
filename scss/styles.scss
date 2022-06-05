@@ -25,7 +25,6 @@ body {
     
     a {
         text-decoration: none;
-        color: rgb(19, 18, 18);
     }
     
     li {
@@ -378,7 +377,7 @@ body {
     
     /* MEDIA QUERIES */
     
-    /* TABLETS */
+    /* TABLET */
     
     @media (min-width: 541px) and (max-width: 1000px) {
     
@@ -406,6 +405,7 @@ body {
             &__tinydesk {
                 height: 50vh;
                 width: 97vw;
+                margin-bottom: 2rem;
             }
     
             &__cambiandolapiel {
@@ -416,10 +416,7 @@ body {
     
         .shows__title {
             font-size: 6rem;
-        }
-    
-        .shows__title1 {
-            font-size: 6rem;
+            margin-top: 5rem;
         }
     
         /* GALLERY */
@@ -493,6 +490,11 @@ body {
     
             &__img {
                 min-width: 480px;
+                margin: 2rem 0rem;
+            }
+
+            &__text {
+                margin: 1rem 3rem;
             }
         }
     
@@ -540,19 +542,27 @@ body {
             }
         }
         
-        .shows__title {
-            font-size: 3.3rem;
+        .shows {
+            &__title {
+                font-size: 3.3rem;
+                margin: 3rem;
+            }
+
+            &__location {
+                font-size: 3rem;
+            }
+
+            &__location--end {
+                font-size: 3rem;
+            }
         }
-    
-        .shows__title1 {
-            font-size: 5rem;
-        }
-    
+        
         /* MUSIC */
     
         .partedemi {
             &__cover {
                 max-width: 97vw;
+                margin: 0rem 1.5rem 3rem 1.5rem;
             }
         
             &__spotify {
@@ -564,6 +574,7 @@ body {
         .recuerdos {
             &__cover {
                 max-width: 98vw;
+                margin: 0rem 1.5rem 3rem 1.5rem;
             }
         
             &__spotify {
@@ -641,12 +652,20 @@ body {
             align-items: center;
     
             &__img {
-                min-width: 320px;
+                min-width: 370px;
+                margin: 2rem 0rem;
             }
     
             &__text {
                 font-size: 1.3rem;
+                margin: 0rem 3rem;
             }
+        }
+
+        /* CONTACT */
+
+        .contact {
+            padding-bottom: 5rem;
         }
     
     }

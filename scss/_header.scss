@@ -34,5 +34,18 @@ header {
             }
         }
     }
-    
+
+    .navbar-toggler {
+        border-color: $textos;
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(100%);
+    }
+
+    @media (min-width: 320px) and (max-width: 540px) {
+        h1 {
+            margin: 0rem;
+        }
+    }
 }

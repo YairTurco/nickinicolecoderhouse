@@ -1,7 +1,7 @@
 
 footer {
 background-color: $background2;
-padding-top: 1rem;
+padding-top: 2rem;
     .social__media {
 
         .social__links {
@@ -23,4 +23,28 @@ padding-top: 1rem;
     .social__rights {
         text-align: right;
     }
+
+    /* TABLET */
+    @media (min-width: 541px) and (max-width: 1000px) {
+        
+        footer {
+            padding-top: 2rem;
+            .social__media{
+                .social__links {
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    }
+
+    
+    /* MOBILE */
+
+    @media (min-width: 320px) and (max-width: 540px) {
+        
+        footer {
+            padding-top: 2rem;
+        }
+    }
+
 }
