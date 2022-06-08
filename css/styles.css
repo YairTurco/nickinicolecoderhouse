@@ -1,5 +1,5 @@
 header {
-  background-color: #ac0a0a; }
+  background-color: rgba(172, 10, 10, 0.753); }
   header .title__text {
     color: #e6e3e3;
     font-size: 2rem;
@@ -32,7 +32,7 @@ header {
       margin: 0rem; } }
 
 footer {
-  background-color: #8f0707;
+  background-color: rgba(143, 7, 7, 0.712);
   padding-top: 2rem;
   /* TABLET */
   /* MOBILE */ }
@@ -74,7 +74,7 @@ body {
   body ol {
     list-style-type: none; }
   body main {
-    background-color: #ac0a0a; }
+    background-color: rgba(172, 10, 10, 0.753); }
   body a {
     text-decoration: none; }
   body li {
@@ -174,29 +174,29 @@ body {
       background-color: rgba(134, 28, 30, 0); }
   body .partedemi {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     align-content: space-between;
     padding: 4rem; }
     body .partedemi__spotify {
       width: 85vw;
-      height: 31.25rem; }
+      height: 31.25rem;
+      margin: 0rem 1rem; }
     body .partedemi__cover {
       max-width: 100vw;
-      margin-bottom: 2rem;
-      box-shadow: 0rem 0rem 1rem 1rem #8f0707; }
+      box-shadow: 0rem 0rem 1rem 1rem rgba(95, 7, 7, 0.712); }
   body .recuerdos {
     background: #22757e;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 4rem; }
     body .recuerdos__spotify {
       width: 85vw;
-      height: 31.25rem; }
+      height: 31.25rem;
+      margin: 0rem 1rem; }
     body .recuerdos__cover {
       max-width: 100vw;
-      margin-bottom: 2rem;
       box-shadow: 0rem 0rem 1rem 1rem #19575e; }
   body .gallery {
     display: grid;
@@ -277,7 +277,8 @@ body {
     body .bio__img {
       margin: 1rem;
       width: 48vw;
-      border-radius: 1rem; }
+      border-radius: 1rem;
+      box-shadow: 0rem 0rem 0.5rem 0.5rem rgba(95, 7, 7, 0.712); }
     body .bio__text {
       display: flex;
       flex-direction: column;
@@ -292,7 +293,8 @@ body {
     justify-items: center;
     padding-bottom: 10rem; }
     body .contact__photo {
-      max-width: 100%; }
+      max-width: 100%;
+      box-shadow: 0rem 0rem 1rem 1rem rgba(95, 7, 7, 0.712); }
     body .contact__box form .contact__form {
       display: flex;
       flex-direction: column;
@@ -302,9 +304,10 @@ body {
       body .contact__text p {
         font-size: 2.5rem;
         text-align: center; }
-  @media (min-width: 541px) and (max-width: 1000px) {
+  @media (min-width: 541px) and (max-width: 1024px) {
     body {
       /* GENERAL */
+      /* MUSIC */
       /* INDEX */
       /* GALLERY */
       /* BIO */
@@ -316,6 +319,14 @@ body {
         display: flex;
         justify-content: space-around;
         padding: 0; }
+      body .partedemi {
+        flex-direction: column; }
+        body .partedemi__cover {
+          margin-bottom: 1.5rem; }
+      body .recuerdos {
+        flex-direction: column; }
+        body .recuerdos__cover {
+          margin-bottom: 1.5rem; }
       body .releases__text {
         text-align: center;
         font-size: 4.7rem; }
@@ -411,18 +422,22 @@ body {
         font-size: 3rem; }
       body .shows__location--end {
         font-size: 3rem; }
-      body .partedemi__cover {
-        max-width: 97vw;
-        margin: 0rem 1.5rem 3rem 1.5rem; }
-      body .partedemi__spotify {
-        width: 98vw;
-        height: 31.25rem; }
-      body .recuerdos__cover {
-        max-width: 98vw;
-        margin: 0rem 1.5rem 3rem 1.5rem; }
-      body .recuerdos__spotify {
-        width: 98vw;
-        height: 31.25rem; }
+      body .partedemi {
+        flex-direction: column; }
+        body .partedemi__cover {
+          max-width: 90vw;
+          margin: 0rem 1.5rem 1.5rem 1.5rem; }
+        body .partedemi__spotify {
+          width: 95vw;
+          height: 31.25rem; }
+      body .recuerdos {
+        flex-direction: column; }
+        body .recuerdos__cover {
+          max-width: 90vw;
+          margin: 0rem 1.5rem 1.5rem 1.5rem; }
+        body .recuerdos__spotify {
+          width: 95vw;
+          height: 31.25rem; }
       body .gallery {
         display: grid;
         grid-template-columns: 1fr;
