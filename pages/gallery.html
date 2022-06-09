@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <title>Shows</title>
     <link rel="shortcut icon" href="../resources/logo/favicon-16x16.png">
@@ -17,8 +19,8 @@
 
 <body>
 
+    <!-- TITULO -->
     <header>
-        <!-- TITULO -->
 
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -31,7 +33,7 @@
                         <li class="nav-item"><a class="nav-link menu__nav" aria-current="page" href="music.html">MUSIC</a></li>
                         <li class="nav-item"><a class="nav-link menu__nav" href="gallery.html">GALLERY</a></li>
                         <li class="nav-item"><a class="nav-link menu__nav" href="bio.html">BIO</a></li>
-                        <li class="nav-item"><a class="nav-link menu__nav" href="contact.html">CONTACT</a></li>
+                        <li class="nav-item"><a class="nav-link menu__nav" href="newsletter.html">NEWSLETTER</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,6 +43,10 @@
 
     <!-- GALERIA -->
     <main>
+
+        <div class="gallerytitle" data-aos="fade-up" data-aos-duration="1000">
+            <p class="gallerytitle__text" >"Parte de mi..."</p>
+        </div>
 
         <div class="gallery">
             <div class="gallery__item gallery__1"></div>
@@ -81,6 +87,9 @@
 
     </footer>
 
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

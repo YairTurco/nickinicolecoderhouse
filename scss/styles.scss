@@ -69,7 +69,7 @@ body {
     /* INDEX */
     
     .releases {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
         &__text {
             text-align: center;
             font-size: 6rem;
@@ -87,18 +87,6 @@ body {
     
         &__cambiandolapiel {
             @include releasesizes;
-        }
-    }
-    
-    
-    .newsletter {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5rem;
-    
-        &__input {
-            margin: 0;
         }
     }
     
@@ -169,8 +157,18 @@ body {
             background-color: rgba(134, 28, 30, 0);
         }
     }
+
     /* MUSIC */
     
+    .music {
+        &__text {
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 100;
+        padding: 3rem 0rem;
+        }
+    }
+
     .partedemi {
         display: flex;
         flex-direction: row;
@@ -207,6 +205,16 @@ body {
     }
     
     /* GALLERY */
+
+    .gallerytitle {
+        &__text {
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 100;
+        padding: 3rem 0rem;
+        font-style: italic;
+        }
+    }
     
     .gallery {
         display: grid;
@@ -329,9 +337,9 @@ body {
         }
     }
     
-    /* CONTACT */
+    /* NEWSLETTER */
     
-    .contact {
+    .newsletter {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -340,15 +348,25 @@ body {
         &__photo {
             max-width: 100%;
             box-shadow: 0rem 0rem 1rem 1rem $shadow;
+            margin: 3rem 0rem 2rem 0rem;
         }
     
         &__box {
     
             form {
-                .contact__form {
+                .newsletter__form {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    
+                }
+
+                .newsletter__input {
+                    max-width: 70%;
+                }
+
+                .newsletter__button {
+                    margin-top: 1rem;
                 }
             }
     
@@ -501,9 +519,7 @@ body {
                 margin: 1rem 3rem;
             }
         }
-    
-        /* CONTACT */
-    
+        
     }
     
     /* MOBILE */
@@ -548,23 +564,32 @@ body {
         
         .shows {
             &__title {
-                font-size: 3.3rem;
+                font-size: 3rem;
                 margin: 3rem;
             }
 
             &__location {
-                font-size: 3rem;
+                font-size: 2.8rem;
             }
 
             &__location--end {
-                font-size: 3rem;
+                font-size: 2.8rem;
             }
         }
         
         /* MUSIC */
+
+        .music {
+            &__text {
+            font-size: 2.4rem;
+            padding: 0rem 0rem;
+            padding-top: 1.5rem;
+            }
+        }
     
         .partedemi {
             flex-direction: column;
+            padding: 2rem;
             &__cover {
                 max-width: 90vw;
                 margin: 0rem 1.5rem 1.5rem 1.5rem;
@@ -590,6 +615,13 @@ body {
         }
     
         /* GALLERY */
+
+        .gallerytitle {
+            &__text {
+            font-size: 3rem;
+            padding: 2rem 0rem;
+            }
+        }
     
         .gallery {
             display: grid;
@@ -658,7 +690,7 @@ body {
             align-items: center;
     
             &__img {
-                min-width: 370px;
+                min-width: 340px;
                 margin: 2rem 0rem;
             }
     
@@ -668,9 +700,9 @@ body {
             }
         }
 
-        /* CONTACT */
+        /* NEWSLETTER */
 
-        .contact {
+        .newsletter {
             padding-bottom: 5rem;
         }
     
