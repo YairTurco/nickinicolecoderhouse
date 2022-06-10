@@ -36,7 +36,10 @@ header {
     }
 
     .navbar-toggler {
-        border-color: $textos;
+        border: 0px;
+        &:focus {
+            box-shadow: none;
+        }
     }
 
     .navbar-toggler-icon {

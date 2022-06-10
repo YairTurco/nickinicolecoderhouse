@@ -24,7 +24,9 @@ header {
         color: #e6e3e3;
         background-size: 100% 2px; }
   header .navbar-toggler {
-    border-color: #e6e3e3; }
+    border: 0px; }
+    header .navbar-toggler:focus {
+      box-shadow: none; }
   header .navbar-toggler-icon {
     filter: invert(100%); }
   @media (min-width: 320px) and (max-width: 540px) {
